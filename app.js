@@ -18,7 +18,7 @@ var campgroundRoutes=require("./routes/campgrounds");
 
 //seedDB();
 
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect("mongodb+srv://Shaurya:shaurya26@yelpcamp-nzyj5.mongodb.net/test?retryWrites=true&w=majority");
 app.use(express.static(__dirname+"/public"));
 app.set("view engine","ejs");
 app.use(require("express-session")({
