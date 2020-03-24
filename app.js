@@ -18,7 +18,7 @@ var campgroundRoutes=require("./routes/campgrounds");
 
 //seedDB();
 
-mongoose.connect( process.env.MONGODB_URI,{
+mongoose.connect( process.env.MONGODB_URI || "mongodb://localhost/yelp_camp_v10",{
     useUnifiedTopology: true,
     useNewUrlParser: true
 });
