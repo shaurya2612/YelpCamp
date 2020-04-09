@@ -18,6 +18,8 @@ var campgroundRoutes=require("./routes/campgrounds");
 
 //seedDB();
 
+PORT = 5050 || process.env.PORT;
+
 mongoose.connect( process.env.MONGODB_URI || "mongodb://localhost/yelp_camp_v10",{
     useUnifiedTopology: true,
     useNewUrlParser: true
@@ -50,6 +52,6 @@ app.use(campgroundRoutes);
 app.use(methodOverride("_method"));
 
 
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("YelpCamp Server Started");
+app.listen(PORT, function(){
+    console.log("YelpCamp Server Started on port:"+PORT);
 });
