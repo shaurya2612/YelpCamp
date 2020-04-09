@@ -1,6 +1,7 @@
 
 # YelpCamp
-#About
+
+## About
 This is a basic Camping review website, with User Authentication, Authorization, Flash exception handling and CRUD.
 Commenting on posts has also been implemented.
 This project has been made with Node.js, Express.js, MongoDB and ejs files.
